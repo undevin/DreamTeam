@@ -12,6 +12,12 @@
 		0371789625F68B660019845F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0371789425F68B660019845F /* Main.storyboard */; };
 		0371789825F68B680019845F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0371789725F68B680019845F /* Assets.xcassets */; };
 		0371789B25F68B680019845F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0371789925F68B680019845F /* LaunchScreen.storyboard */; };
+		037178B225F6938D0019845F /* DreamTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178B125F6938D0019845F /* DreamTeamTableViewController.swift */; };
+		037178B525F694380019845F /* TeamMemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178B425F694380019845F /* TeamMemberDetailViewController.swift */; };
+		037178BB25F69B210019845F /* TeamMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178BA25F69B210019845F /* TeamMemberTableViewCell.swift */; };
+		037178C225F6A8010019845F /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178C125F6A8010019845F /* MemberController.swift */; };
+		5BDB6F0125F68F0C001898B7 /* DreamTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */; };
+		5BDB6F0625F68F62001898B7 /* DreamTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		0371789725F68B680019845F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0371789A25F68B680019845F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0371789C25F68B680019845F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037178B125F6938D0019845F /* DreamTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeamTableViewController.swift; sourceTree = "<group>"; };
+		037178B425F694380019845F /* TeamMemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberDetailViewController.swift; sourceTree = "<group>"; };
+		037178BA25F69B210019845F /* TeamMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberTableViewCell.swift; sourceTree = "<group>"; };
+		037178C125F6A8010019845F /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
+		5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeam.swift; sourceTree = "<group>"; };
+		5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeamController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 		0371788D25F68B660019845F /* DreamTeam */ = {
 			isa = PBXGroup;
 			children = (
+				5BDB6EFE25F68ED5001898B7 /* Controllers */,
+				5BDB6EFD25F68EC8001898B7 /* Model */,
 				037178A425F68B900019845F /* Views */,
 				037178A325F68B740019845F /* Resources */,
 			);
@@ -74,6 +88,7 @@
 		037178A425F68B900019845F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				037178B925F69AFF0019845F /* Custom Cell */,
 				037178A525F68B950019845F /* Storyboards */,
 			);
 			path = Views;
@@ -86,6 +101,49 @@
 				0371789925F68B680019845F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		037178B025F693200019845F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				037178B125F6938D0019845F /* DreamTeamTableViewController.swift */,
+				037178B425F694380019845F /* TeamMemberDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		037178B925F69AFF0019845F /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				037178BA25F69B210019845F /* TeamMemberTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		5BDB6EFD25F68EC8001898B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BDB6EFE25F68ED5001898B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				037178B025F693200019845F /* View Controller */,
+				5BDB6EFF25F68EDC001898B7 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BDB6EFF25F68EDC001898B7 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */,
+				037178C125F6A8010019845F /* MemberController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDB6F0625F68F62001898B7 /* DreamTeamController.swift in Sources */,
 				0371788F25F68B660019845F /* AppDelegate.swift in Sources */,
 				0371789125F68B660019845F /* SceneDelegate.swift in Sources */,
+				037178B225F6938D0019845F /* DreamTeamTableViewController.swift in Sources */,
+				037178B525F694380019845F /* TeamMemberDetailViewController.swift in Sources */,
+				037178C225F6A8010019845F /* MemberController.swift in Sources */,
+				5BDB6F0125F68F0C001898B7 /* DreamTeam.swift in Sources */,
+				037178BB25F69B210019845F /* TeamMemberTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +371,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9J63HYQ843;
+				DEVELOPMENT_TEAM = HTBMNX3CLT;
 				INFOPLIST_FILE = DreamTeam/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,8 +391,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9J63HYQ843;
+				DEVELOPMENT_TEAM = HTBMNX3CLT;
 				INFOPLIST_FILE = DreamTeam/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
