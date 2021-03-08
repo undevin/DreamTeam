@@ -42,7 +42,7 @@ class DreamTeamTableViewController: UITableViewController {
     }
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toMemberDetails" {
+        if segue.identifier == "toDetailVC" {
             guard let indexPath = tableView.indexPathForSelectedRow,
                   let destination = segue.destination as? TeamMemberDetailViewController else { return }
             let memberToSend = DreamTeamController.shared.dreamTeamMembers[indexPath.row]
