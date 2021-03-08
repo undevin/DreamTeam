@@ -11,7 +11,7 @@ import UIKit
 class DreamTeamController {
     
     static let share = DreamTeamController()
-    var carla = UIImage(named: "")
+    var carla = UIImage(named: "carla")
     var danny = UIImage(named: "")
     var devin = UIImage(named: "devin")
     
