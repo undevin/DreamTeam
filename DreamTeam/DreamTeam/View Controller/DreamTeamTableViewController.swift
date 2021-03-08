@@ -22,12 +22,12 @@ class DreamTeamTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DreamTeamController.shared.dreamTeamMembers.count
+        return DreamTeamController.share.dreamTeamMembers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath) as? TeamMemberTableViewCell else { return UITableViewCell() }
-        let member = DreamTeamController.shared.dreamTeamMembers[indexPath.row]
+        let member = DreamTeamController.share.dreamTeamMembers[indexPath.row]
         cell.member = member
         
         return cell
@@ -35,8 +35,8 @@ class DreamTeamTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let memberToDelete = DreamTeamController.shared.dreamTeamMembers[indexPath.row]
-            DreamTeamController.shared.deleteMember(memberToDelete)
+            let memberToDelete = DreamTeamController.share.dreamTeamMembers[indexPath.row]
+            DreamTeamController.share.deleteMember(memberToDelete: memberToDelete)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
@@ -45,7 +45,7 @@ class DreamTeamTableViewController: UITableViewController {
         if segue.identifier == "toDetailVC" {
             guard let indexPath = tableView.indexPathForSelectedRow,
                   let destination = segue.destination as? TeamMemberDetailViewController else { return }
-            let memberToSend = DreamTeamController.shared.dreamTeamMembers[indexPath.row]
+            let memberToSend = DreamTeamController.share.dreamTeamMembers[indexPath.row]
             destination.member = memberToSend
         }
     }
