@@ -26,9 +26,9 @@ class DreamTeamTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath)
-        
-        // Configure the cell...
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "memberCell", for: indexPath) as? TeamMemberTableViewCell else { return UITableViewCell() }
+        let member = DreamTeamController.shared.dreamTeamMembers[indexPath.row]
+        cell.member = member
         
         return cell
     }
