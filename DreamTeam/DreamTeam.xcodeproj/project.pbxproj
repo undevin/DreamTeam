@@ -15,6 +15,7 @@
 		037178B225F6938D0019845F /* DreamTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178B125F6938D0019845F /* DreamTeamTableViewController.swift */; };
 		037178B525F694380019845F /* TeamMemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178B425F694380019845F /* TeamMemberDetailViewController.swift */; };
 		037178BB25F69B210019845F /* TeamMemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178BA25F69B210019845F /* TeamMemberTableViewCell.swift */; };
+		037178C225F6A8010019845F /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037178C125F6A8010019845F /* MemberController.swift */; };
 		5BDB6F0125F68F0C001898B7 /* DreamTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */; };
 		5BDB6F0625F68F62001898B7 /* DreamTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		037178B125F6938D0019845F /* DreamTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeamTableViewController.swift; sourceTree = "<group>"; };
 		037178B425F694380019845F /* TeamMemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberDetailViewController.swift; sourceTree = "<group>"; };
 		037178BA25F69B210019845F /* TeamMemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberTableViewCell.swift; sourceTree = "<group>"; };
+		037178C125F6A8010019845F /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
 		5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeam.swift; sourceTree = "<group>"; };
 		5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeamController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */,
+				037178C125F6A8010019845F /* MemberController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				0371789125F68B660019845F /* SceneDelegate.swift in Sources */,
 				037178B225F6938D0019845F /* DreamTeamTableViewController.swift in Sources */,
 				037178B525F694380019845F /* TeamMemberDetailViewController.swift in Sources */,
+				037178C225F6A8010019845F /* MemberController.swift in Sources */,
 				5BDB6F0125F68F0C001898B7 /* DreamTeam.swift in Sources */,
 				037178BB25F69B210019845F /* TeamMemberTableViewCell.swift in Sources */,
 			);
