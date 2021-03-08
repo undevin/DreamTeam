@@ -66,7 +66,6 @@
 		0371788D25F68B660019845F /* DreamTeam */ = {
 			isa = PBXGroup;
 			children = (
-				037178B025F693200019845F /* View Controller */,
 				5BDB6EFE25F68ED5001898B7 /* Controllers */,
 				5BDB6EFD25F68EC8001898B7 /* Model */,
 				037178A425F68B900019845F /* Views */,
@@ -90,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				037178B925F69AFF0019845F /* Custom Cell */,
-				5BDB6F0825F68F72001898B7 /* Custom View */,
 				037178A525F68B950019845F /* Storyboards */,
 			);
 			path = Views;
@@ -133,7 +131,7 @@
 		5BDB6EFE25F68ED5001898B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5BDB6F0425F68F47001898B7 /* View Controller */,
+				037178B025F693200019845F /* View Controller */,
 				5BDB6EFF25F68EDC001898B7 /* Model Controller */,
 			);
 			path = Controllers;
@@ -146,20 +144,6 @@
 				037178C125F6A8010019845F /* MemberController.swift */,
 			);
 			path = "Model Controller";
-			sourceTree = "<group>";
-		};
-		5BDB6F0425F68F47001898B7 /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controller";
-			sourceTree = "<group>";
-		};
-		5BDB6F0825F68F72001898B7 /* Custom View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
