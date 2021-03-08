@@ -26,5 +26,6 @@ class TeamMemberTableViewCell: UITableViewCell {
         guard let member = member else { return }
         nameLabel.text = member.name
         imageIcon.image = member.photo.getImage()
+        imageIcon.layer.cornerRadius = imageIcon.frame.height / 2
     }
 }//End of Class

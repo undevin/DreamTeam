@@ -29,14 +29,12 @@ class TeamMemberDetailViewController: UIViewController {
         }
     }
     
-    // MARK: - Actions
-    
-    
     // MARK: - Methods
     func updateViews() {
         guard let member = member else {return}
         nameLabel.text = member.name
-        bioLabel.text = member.bio
-        funFactLabel.text = member.funFact
+        imageView.image = member.photo.getImage()
+        bioLabel.text = "About Me:\n\(member.bio)"
+        funFactLabel.text = "Fun Fact:\n\(member.funFact)"
     }
 }//End of Class
