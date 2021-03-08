@@ -9,6 +9,8 @@ import UIKit
 
 class MemberController {
     
+    static let share = MemberController()
+    
     // MARK: - SOT
     var teamMembers: [DreamTeam] {
         
