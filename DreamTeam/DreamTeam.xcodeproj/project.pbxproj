@@ -12,6 +12,8 @@
 		0371789625F68B660019845F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0371789425F68B660019845F /* Main.storyboard */; };
 		0371789825F68B680019845F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0371789725F68B680019845F /* Assets.xcassets */; };
 		0371789B25F68B680019845F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0371789925F68B680019845F /* LaunchScreen.storyboard */; };
+		5BDB6F0125F68F0C001898B7 /* DreamTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */; };
+		5BDB6F0625F68F62001898B7 /* DreamTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0371789725F68B680019845F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0371789A25F68B680019845F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0371789C25F68B680019845F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeam.swift; sourceTree = "<group>"; };
+		5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTeamController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		0371788D25F68B660019845F /* DreamTeam */ = {
 			isa = PBXGroup;
 			children = (
+				5BDB6EFE25F68ED5001898B7 /* Controllers */,
+				5BDB6EFD25F68EC8001898B7 /* Model */,
 				037178A425F68B900019845F /* Views */,
 				037178A325F68B740019845F /* Resources */,
 			);
@@ -74,6 +80,7 @@
 		037178A425F68B900019845F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5BDB6F0825F68F72001898B7 /* Custom View */,
 				037178A525F68B950019845F /* Storyboards */,
 			);
 			path = Views;
@@ -86,6 +93,45 @@
 				0371789925F68B680019845F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5BDB6EFD25F68EC8001898B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB6F0025F68F0C001898B7 /* DreamTeam.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BDB6EFE25F68ED5001898B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB6F0425F68F47001898B7 /* View Controller */,
+				5BDB6EFF25F68EDC001898B7 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BDB6EFF25F68EDC001898B7 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BDB6F0525F68F62001898B7 /* DreamTeamController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		5BDB6F0425F68F47001898B7 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		5BDB6F0825F68F72001898B7 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDB6F0625F68F62001898B7 /* DreamTeamController.swift in Sources */,
 				0371788F25F68B660019845F /* AppDelegate.swift in Sources */,
 				0371789125F68B660019845F /* SceneDelegate.swift in Sources */,
+				5BDB6F0125F68F0C001898B7 /* DreamTeam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
