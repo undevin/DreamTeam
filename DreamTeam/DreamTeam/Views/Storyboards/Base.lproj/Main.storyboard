@@ -11,13 +11,13 @@
         <!--Dream Team-->
         <scene sceneID="qs4-Zh-Flo">
             <objects>
-                <tableViewController id="jRW-mM-0H6" sceneMemberID="viewController">
+                <tableViewController id="jRW-mM-0H6" customClass="DreamTeamTableViewController" customModule="DreamTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xdm-ZF-KlA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberCell" rowHeight="92" id="M0C-j0-a8D">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberCell" rowHeight="92" id="M0C-j0-a8D" customClass="TeamMemberTableViewCell" customModule="DreamTeam" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M0C-j0-a8D" id="D5s-9b-CRd">
@@ -51,6 +51,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imageIcon" destination="Kv1-Vv-BtX" id="UJe-a5-bPy"/>
+                                    <outlet property="nameLabel" destination="0MQ-pq-nir" id="ufx-TK-L8F"/>
                                     <segue destination="vr9-th-EoA" kind="show" identifier="toDetailVC" id="MrS-aU-UfG"/>
                                 </connections>
                             </tableViewCell>
@@ -66,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="634.78260869565224" y="134.59821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Team Member Detail View Controller-->
         <scene sceneID="15q-kS-jDm">
             <objects>
-                <viewController id="vr9-th-EoA" sceneMemberID="viewController">
+                <viewController id="vr9-th-EoA" customClass="TeamMemberDetailViewController" customModule="DreamTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p4U-zU-GyI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +117,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6cJ-OL-xSK"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="jAN-fB-YJW" id="A8a-s7-FUZ"/>
+                        <outlet property="funFactLabel" destination="1th-Ka-xHk" id="YOk-7K-aSy"/>
+                        <outlet property="imageView" destination="3IL-Le-gM1" id="4My-li-XbA"/>
+                        <outlet property="nameLabel" destination="CXW-FQ-Rw6" id="afu-Sw-lZS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydj-pB-Z61" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

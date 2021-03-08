@@ -10,6 +10,10 @@ import UIKit
 class TeamMemberDetailViewController: UIViewController {
     
     // MARK: - Outlets
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var bioLabel: UILabel!
+    @IBOutlet weak var funFactLabel: UILabel!
     
 
     // MARK: - Lifecycle
