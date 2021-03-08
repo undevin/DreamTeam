@@ -23,6 +23,8 @@ class TeamMemberTableViewCell: UITableViewCell {
     
     // MARK: - Methods
     func setupViews() {
-        
+        guard let member = member else { return }
+        nameLabel.text = member.name
+        imageIcon.image = member.photo.getImage()
     }
 }//End of Class
