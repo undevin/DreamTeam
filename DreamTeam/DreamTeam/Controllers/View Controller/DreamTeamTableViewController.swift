@@ -12,12 +12,7 @@ class DreamTeamTableViewController: UITableViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
-    
-    // MARK: - Methods
-    func loadMembers() {
-        
+        DreamTeamController.share.fetchMembers()
     }
     
     // MARK: - Table view data source

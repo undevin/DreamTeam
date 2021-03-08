@@ -25,6 +25,10 @@ class DreamTeamController {
         saveToPersistenceStore()
     }
     
+    func fetchMembers() {
+        self.dreamTeamMembers = MemberController.share.teamMembers
+        saveToPersistenceStore()
+    }
     
     func deleteMember(memberToDelete: DreamTeam) {
         
