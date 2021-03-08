@@ -10,6 +10,8 @@ import UIKit
 class TeamMemberTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
+    @IBOutlet weak var imageIcon: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     // MARK: - Properties
