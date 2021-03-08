@@ -34,7 +34,9 @@ class TeamMemberDetailViewController: UIViewController {
     
     // MARK: - Methods
     func updateViews() {
-        
+        guard let member = member else {return}
+        nameLabel.text = member.name
+        bioLabel.text = member.bio
+        funFactLabel.text = member.funFact
     }
-    
 }//End of Class
