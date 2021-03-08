@@ -12,12 +12,8 @@ class DreamTeamController {
     
     static let share = DreamTeamController()
 
-    var carla = UIImage(named: "")
     var danny = UIImage(named: "danstudio_29")
-
     var carla = UIImage(named: "carla")
-    var danny = UIImage(named: "")
-
     var devin = UIImage(named: "devin")
     
     var dreamTeamMembers: [DreamTeam] = []
